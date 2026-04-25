@@ -105,7 +105,7 @@ void level_screen(Mouse& mouse) {
 	box6.renderBarrier(window);
 
 	sf::Font font;
-	if (!font.loadFromFile("C:/Users/mehme/OneDrive/Masaüstü/C++ uygulama/2d_golf_game/fonts/Dee-Quickest Sans.otf")) {
+	if (!font.loadFromFile("fonts/Dee-Quickest Sans.otf")) {
 		std::cerr << "Hata olustu!";
 	}
 	sf::Text text1;
@@ -163,7 +163,7 @@ void level_screen(Mouse& mouse) {
 	window.draw(text6);
 
 	sf::Texture texture1;
-	texture1.loadFromFile("C:/Users/mehme/OneDrive/Masaüstü/C++ uygulama/2d_golf_game/photos/kilit.png");
+	texture1.loadFromFile("photos/kilit.png");
 
 	
 	sf::Sprite spr2;
@@ -259,7 +259,7 @@ void start_screen(Mouse& mouse) {
 	window.clear(sf::Color::Green);
 	sf::Font font1;
 	sf::Text text1;
-	if (!font1.loadFromFile("C:/Users/mehme/OneDrive/Masaüstü/C++ uygulama/2d_golf_game/fonts/Golden Sands DEMO VERSION.ttf")) {
+	if (!font1.loadFromFile("fonts/Golden Sands DEMO VERSION.ttf")) {
 		std::cerr << "Hata olusdu!";
 	}
 	text1.setFont(font1);
@@ -294,7 +294,7 @@ void game_over_screen() {
 	window.clear(sf::Color::White);
 
 	sf::Font font_end;
-	if (!font_end.loadFromFile("C:/Users/mehme/OneDrive/Masaüstü/C++ uygulama/2d_golf_game/fonts/Dee-Quickest Sans.otf")) {
+	if (!font_end.loadFromFile("fonts/Dee-Quickest Sans.otf")) {
 		std::cerr << "Hata olustu!";
 	}
 	sf::Text text_end;
@@ -312,7 +312,7 @@ void game_over_screen() {
 void win_screen() {
 	window.clear(sf::Color::Black);
 	sf::Font font;
-	font.loadFromFile("C:/Users/mehme/OneDrive/Masaüstü/C++ uygulama/2d_golf_game/fonts/Dee-Quickest Sans.otf");
+	font.loadFromFile("fonts/Dee-Quickest Sans.otf");
 	sf::Text text;
 	text.setCharacterSize(40);
 	text.setFillColor(sf::Color::White);
